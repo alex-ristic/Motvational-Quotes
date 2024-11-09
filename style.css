@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
+    /* border: #030915 solid 1px; */
 }
 
 body{
@@ -29,8 +30,6 @@ body{
 
 .all-container {
     width: 550px;
-    /* width: 550px;
-    height: 450px; */
 }
 
 .headline-div {
@@ -58,13 +57,13 @@ body{
 
 .quote-div p {
     font-weight: 300;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     padding-top: 0.5rem;
 }
 
 .person-div p {
     text-transform: uppercase;
-    font-size: 1.6rem;
+    font-size: 1.7rem;
     font-weight: 300;
     color: #0E5CA4;
     margin-top: 0.5rem;
@@ -72,9 +71,10 @@ body{
 
 .button {
     margin-top: 1rem;
+    margin-bottom: 0.5rem;
     background-color: #030915;
     color: #fff;
-    padding: 0.4rem 0.8rem;
+    padding: 0.4rem 1rem;
     border-radius: 1rem;
     font-size: 1rem;
 }
@@ -82,4 +82,59 @@ body{
 .button:hover {
     opacity: 95%;
     cursor: pointer;
+}
+
+.style-unactive {
+    background-color: #03091523;
+    border: none;
+    font-size: 0.9rem;
+    padding: 0.25rem 0rem;
+    width: 22%;
+    border-radius: 0.5rem;
+
+}
+
+.style-unactive:hover {
+    background-color: #0309153c;
+    cursor: pointer;
+}
+
+.style-active {
+    background-color: #03091562;
+}
+
+.style-active:hover {
+    cursor: pointer;
+    background-color: #0309154e;
+}
+
+.note {
+    padding: 0rem;
+    font-size: 0.9rem;
+    opacity: 75%;
+}
+
+.note-none {
+    display: none;
+}
+
+/* Add the trembling animation */
+@keyframes tremble {
+    0% { transform: translateX(0); }
+    10% { transform: translateX(-10px); }
+    20% { transform: translateX(10px); }
+    30% { transform: translateX(-10px); }
+    40% { transform: translateX(10px); }
+    50% { transform: translateX(-10px); }
+    60% { transform: translateX(10px); }
+    70% { transform: translateX(-10px); }
+    80% { transform: translateX(10px); }
+    90% { transform: translateX(-10px); }
+    100% { transform: translateX(0); }
+    
+}
+
+/* Class that will trigger the tremble animation */
+.tremble {
+    animation: tremble 1s ease-in-out;
 }
