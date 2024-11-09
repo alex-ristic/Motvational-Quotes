@@ -91,7 +91,6 @@ body{
     padding: 0.25rem 0rem;
     width: 22%;
     border-radius: 0.5rem;
-
 }
 
 .style-unactive:hover {
@@ -118,7 +117,6 @@ body{
     display: none;
 }
 
-/* Add the trembling animation */
 @keyframes tremble {
     0% { transform: translateX(0); }
     10% { transform: translateX(-10px); }
@@ -134,7 +132,23 @@ body{
     
 }
 
-/* Class that will trigger the tremble animation */
 .tremble {
     animation: tremble 1s ease-in-out;
+}
+
+@media (max-width: 640px) {
+    .all-container {
+        width: 90%; /* Adjusts width to prevent overflow */
+    }
+    .quote-all {
+        padding: 1rem 1.5rem; /* Reduces padding for smaller screen space */
+    }
+    .style-unactive {
+        background-color: #03091523;
+        border: none;
+        font-size: 0.9rem;
+        padding: 0.25rem 0rem;
+        width: 35%;
+        border-radius: 0.5rem;
+    }
 }
