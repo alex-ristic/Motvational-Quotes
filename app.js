@@ -236,12 +236,12 @@ btn.addEventListener ("click", () => {
             setTimeout(() => {
 
                 note.classList.remove("tremble");
-                note.innerText = "I just trembled! You saw it?"
+                note.innerText = "I just trembled!"
 
                 setTimeout (() => {
                     note.innerText = "Awesome... Now select one."
                     tremble = 1
-                }, 2500)
+                }, 1500)
 
             }, 1100);
 
@@ -310,9 +310,9 @@ btn.addEventListener ("click", () => {
                     setTimeout (() => {
                         note.innerText = " "
                         tremble = 2
-                    }, 2500)
+                    }, 5000)
                     
-                }, 1100);
+                }, 200);
                 
             }
             
