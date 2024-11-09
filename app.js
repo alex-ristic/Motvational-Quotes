@@ -193,7 +193,7 @@ quoteStyles.addEventListener ("click", (e) => {
 
             // funny tremble
             if (tremble === 0) {
-                note.innerText = `Good. Now click "New Quote" to see me trembleee...!"`
+                note.innerText = `Good. Now click "New Quote" to see me trembleee...!`
             } else if (tremble === 1 || tremble === 1.1 || tremble === 1.2 || tremble === 1.3) {
                 note.innerText = "You're not following the instructions... Choose one!"
             }

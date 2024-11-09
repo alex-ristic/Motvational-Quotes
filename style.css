@@ -12,21 +12,12 @@ body{
     align-items: center;
     height: 100vh;
     text-align: center;
-    background-image: url("Img/library.png");
+    background-image: url("Img/library.jpg");
     background-size: cover;
     background-position: center;
 }
 
-/* .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #030915;
-    width: 100px;
-    height: 100px;
-} */
+
 
 .all-container {
     width: 550px;
